@@ -3,10 +3,48 @@
 
 int getSecretNumber(int min, int max);
 
+int getUserInt();
+
+bool isInt(const std::string& input, int& resultNumber);
+
 int main() {
-    int secretNumber = getSecretNumber(0, 100);
-    std::cout << "New secret number is... " << secretNumber << std::endl;
+    int userNumber = getUserInt();
+    std::cout << "Your number is... " << userNumber << std::endl;
     return 0;
+}
+
+/**
+ * Function for getting integer value from user input
+ * @return integer value
+ */
+int getUserInt() {
+    std::string userInput;
+    int userInt;
+
+    std::cout << "Please enter a number..." << std::endl;
+    std::cin >> userInput;
+
+    while(!isInt(userInput, userInt)) {
+        std::cout << "Bad entry! Enter a number" << std::endl;
+        std::cin >> userInput;
+    }
+
+    return userInt;
+}
+
+/**
+ * Function for validating if user input is integer. If it is resultNumber get that value by reference
+ * @param input user input
+ * @param resultNumber reference of output integer value
+ * @return is user input integer value
+ */
+bool isInt(const std::string& input, int& resultNumber) {
+    try {
+        resultNumber = std::stoi(input);
+    } catch (std::invalid_argument&) {
+        return false;
+    }
+    return true;
 }
 
 /**
