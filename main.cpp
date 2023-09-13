@@ -7,10 +7,27 @@ int getUserInt();
 
 bool isInt(const std::string& input, int& resultNumber);
 
+void checkGuess(int secretNumber, int userNumber);
+
 int main() {
+    int secretNumber = getSecretNumber(0, 10);
     int userNumber = getUserInt();
-    std::cout << "Your number is... " << userNumber << std::endl;
+    checkGuess(secretNumber, userNumber);
     return 0;
+}
+
+/**
+ * Function to checking if user guess secret number and react to result
+ * @param secretNumber casino's number
+ * @param userNumber user's number
+ */
+void checkGuess(int secretNumber, int userNumber) {
+    if(secretNumber == userNumber) {
+        std::cout << "Congratulations! Your guessing is right." << std::endl;
+    }
+    else {
+        std::cout << "It seems you out of luck today. Mine number is " << secretNumber << std::endl;
+    }
 }
 
 /**
