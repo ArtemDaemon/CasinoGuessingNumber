@@ -9,7 +9,12 @@ int main() {
     return 0;
 }
 
-// Function to generate random int from min to max
+/**
+ * Function to generate random int from min to max
+ * @param min minimum value of the generated number
+ * @param max maximum value of the generated number
+ * @return generated number in range from min to max
+ */
 int getSecretNumber(int min, int max) {
     std::random_device device;
     std::mt19937 rng(device());
