@@ -1,4 +1,4 @@
-#include "casinoFunctions.h"
+#include "functions.h"
 
 /**
  * Function to checking if user guess secret number and react to result

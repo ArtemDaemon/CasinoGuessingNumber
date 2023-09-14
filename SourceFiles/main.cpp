@@ -1,4 +1,4 @@
-#include "casinoFunctions.h"
+#include "functions.h"
 #include "Profile.h"
 
 int main() {
