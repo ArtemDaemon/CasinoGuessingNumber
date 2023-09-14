@@ -10,5 +10,6 @@ class Profile {
             name = p_name;
             balance = p_balance;
         }
+        void addBalance(int money);
         void print();
 };
