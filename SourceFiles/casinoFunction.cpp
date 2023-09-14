@@ -1,20 +1,4 @@
-#include <iostream>
-#include <random>
-
-int getSecretNumber(int min, int max);
-
-int getUserInt();
-
-bool isInt(const std::string& input, int& resultNumber);
-
-void checkGuess(int secretNumber, int userNumber);
-
-int main() {
-    int secretNumber = getSecretNumber(0, 10);
-    int userNumber = getUserInt();
-    checkGuess(secretNumber, userNumber);
-    return 0;
-}
+#include "casinoFunctions.h"
 
 /**
  * Function to checking if user guess secret number and react to result
