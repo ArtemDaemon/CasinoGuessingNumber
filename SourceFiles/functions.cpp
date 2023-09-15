@@ -21,7 +21,6 @@ unsigned int getUnsignedInt() {
     std::string userInput;
     unsigned int resultNumber;
 
-    std::cout << "Please enter an unsigned number..." << std::endl;
     std::cin >> userInput;
 
     while(!isUnsignedInt(userInput, resultNumber)) {
@@ -67,11 +66,11 @@ bool isInt(const std::string& input, int& resultNumber) {
  * @param secretNumber casino's number
  * @param userNumber user's number
  */
-void checkGuess(int secretNumber, int userNumber) {
+bool checkGuess(int secretNumber, int userNumber) {
     if(secretNumber == userNumber) {
         std::cout << "Congratulations! Your guessing is right." << std::endl;
+        return true;
     }
-    else {
-        std::cout << "It seems you out of luck today. Mine number is " << secretNumber << std::endl;
-    }
+    std::cout << "It seems you out of luck today. Mine number is " << secretNumber << std::endl;
+    return false;
 }

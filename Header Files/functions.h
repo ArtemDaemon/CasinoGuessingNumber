@@ -10,4 +10,4 @@ bool isUnsignedInt(const std::string& input, unsigned int& resultNumber);
 
 bool isInt(const std::string& input, int& resultNumber);
 
-void checkGuess(int secretNumber, int userNumber);
+bool checkGuess(int secretNumber, int userNumber);
