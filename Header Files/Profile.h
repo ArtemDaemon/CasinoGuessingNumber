@@ -11,5 +11,6 @@ class Profile {
             balance = p_balance;
         }
         void addBalance(unsigned int money);
+        void subtractBalance(unsigned int money);
         void print();
 };

@@ -14,3 +14,11 @@ void Profile::print() {
 void Profile::addBalance(unsigned int money) {
     balance += money;
 }
+
+/**
+ * Function for subtracting some amount of money from the balance
+ * @param money amount on money
+ */
+void Profile::subtractBalance(unsigned int money) {
+    balance -= money;
+}
