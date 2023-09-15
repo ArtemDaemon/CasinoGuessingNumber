@@ -7,8 +7,10 @@ void Profile::print() {
     std::cout << "Name: " << name << ", Balance: " << balance << "$" << std::endl;
 }
 
-
-void Profile::addBalance(int money) {
-    if(money < 0) throw std::invalid_argument("The amount to add to the balance cannot be negative!");
+/**
+ * Function for adding some amount of money to the balance
+ * @param money amount on money
+ */
+void Profile::addBalance(unsigned int money) {
     balance += money;
 }
