@@ -8,6 +8,14 @@ void Profile::print() {
 }
 
 /**
+ * Getter for 'balance' field
+ * @return current balance
+ */
+unsigned int Profile::getBalance() {
+    return balance;
+}
+
+/**
  * Function for adding some amount of money to the balance
  * @param money amount on money
  */

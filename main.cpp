@@ -4,6 +4,6 @@
 int main() {
     Profile profile("Артём", 1000);
     profile.subtractBalance(100);    
-    profile.print();
+    std::cout << profile.getBalance() << std::endl;
     return 0;
 }

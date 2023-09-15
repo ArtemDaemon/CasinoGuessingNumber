@@ -10,6 +10,7 @@ class Profile {
             name = p_name;
             balance = p_balance;
         }
+        unsigned int getBalance();
         void addBalance(unsigned int money);
         void subtractBalance(unsigned int money);
         void print();
