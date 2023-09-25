@@ -6,7 +6,7 @@ class Profile {
         std::string name;
         unsigned int balance;
     public:
-        Profile(std::string p_name, unsigned int p_balance) {
+        Profile(const std::string p_name, const unsigned int p_balance) {
             name = p_name;
             balance = p_balance;
         }

@@ -6,7 +6,7 @@
  * @param max maximum value of the generated number
  * @return generated number in range from min to max
  */
-int getSecretNumber(int min, int max) {
+int getSecretNumber(const int min, const int max) {
     std::random_device device;
     std::mt19937 rng(device());
     std::uniform_int_distribution<int> dist(min, max);
@@ -66,7 +66,7 @@ bool isInt(const std::string input, int& resultNumber) {
  * @param secretNumber casino's number
  * @param userNumber user's number
  */
-bool checkGuess(int secretNumber, int userNumber) {
+bool checkGuess(const int secretNumber, const int userNumber) {
     if(secretNumber == userNumber) {
         std::cout << "Congratulations! Your guessing is right." << std::endl;
         return true;

@@ -19,7 +19,7 @@ unsigned int Profile::getBalance() {
  * Function for adding some amount of money to the balance
  * @param money amount on money
  */
-void Profile::addBalance(unsigned int money) {
+void Profile::addBalance(const unsigned int money) {
     balance += money;
 }
 
@@ -27,6 +27,6 @@ void Profile::addBalance(unsigned int money) {
  * Function for subtracting some amount of money from the balance
  * @param money amount on money
  */
-void Profile::subtractBalance(unsigned int money) {
+void Profile::subtractBalance(const unsigned int money) {
     balance -= money;
 }
