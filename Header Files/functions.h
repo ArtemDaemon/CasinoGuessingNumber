@@ -2,12 +2,12 @@
 #include <iostream>
 #include <random>
 
-int getSecretNumber(int min, int max);
+int getSecretNumber(int, int);
 
 unsigned int getUnsignedInt();
 
-bool isUnsignedInt(const std::string& input, unsigned int& resultNumber);
+bool isUnsignedInt(const std::string&, unsigned int&);
 
-bool isInt(const std::string& input, int& resultNumber);
+bool isInt(const std::string&, int&);
 
-bool checkGuess(int secretNumber, int userNumber);
+bool checkGuess(int, int);
