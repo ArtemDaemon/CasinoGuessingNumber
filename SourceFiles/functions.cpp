@@ -37,7 +37,7 @@ unsigned int getUnsignedInt() {
  * @param resultNumber reference of output unsigned integer value
  * @return is user input an unsigned integer value
  */
-bool isUnsignedInt(const std::string& input, unsigned int& resultNumber) {
+bool isUnsignedInt(const std::string input, unsigned int& resultNumber) {
     int tempInt;
     if(isInt(input, tempInt) && tempInt >= 0) {
         resultNumber = tempInt;
@@ -52,7 +52,7 @@ bool isUnsignedInt(const std::string& input, unsigned int& resultNumber) {
  * @param resultNumber reference of output integer value
  * @return is user input an integer value
  */
-bool isInt(const std::string& input, int& resultNumber) {
+bool isInt(const std::string input, int& resultNumber) {
     try {
         resultNumber = std::stoi(input);
     } catch (std::invalid_argument&) {
