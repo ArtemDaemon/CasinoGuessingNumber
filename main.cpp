@@ -7,7 +7,7 @@ const int menuGame = 2;
 const int menuProfileAdd = 1;
 const int menuProfileSubtract = 2;
 
-const unsigned int defaultProfileMoney = 1000;
+const unsigned defaultProfileMoney = 1000;
 
 int main() {
     std::cout << "/////////////////////////////////////////////////////////" << std::endl;
@@ -20,7 +20,7 @@ int main() {
     Profile profile(profileName, defaultProfileMoney);
     profile.print();
 
-    unsigned int menuInput = 1;
+    unsigned menuInput = 1;
     while(menuInput != menuExit) {
         std::cout << "\nChoose some option:" << std::endl;
         std::cout << "1 -- Profile settings" << std::endl;
@@ -34,9 +34,9 @@ int main() {
                 break;
             
             case menuProfile: {
-                unsigned int menuProfileInput = 1;
+                unsigned menuProfileInput = 1;
                 while(menuProfileInput != menuExit) {
-                    unsigned int newMoney;
+                    unsigned newMoney;
 
                     profile.print();
                     std::cout << "\nChoose some option:" << std::endl;
@@ -71,11 +71,11 @@ int main() {
             break;
 
             case menuGame: {
-                unsigned int menuGameInput = 1;
+                unsigned menuGameInput = 1;
                 while(menuGameInput != menuExit) {
-                    unsigned int secretNumber;
-                    unsigned int userNumber;
-                    unsigned int bet;
+                    unsigned secretNumber;
+                    unsigned userNumber;
+                    unsigned bet;
 
                     profile.print();
 

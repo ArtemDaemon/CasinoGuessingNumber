@@ -4,14 +4,14 @@
 class Profile {
     private:
         std::string name;
-        unsigned int balance;
+        unsigned balance;
     public:
-        Profile(const std::string p_name, const unsigned int p_balance) {
+        Profile(const std::string p_name, const unsigned p_balance) {
             name = p_name;
             balance = p_balance;
         }
-        unsigned int getBalance();
-        void addBalance(unsigned int);
-        void subtractBalance(unsigned int);
+        unsigned getBalance();
+        void addBalance(unsigned);
+        void subtractBalance(unsigned);
         void print();
 };

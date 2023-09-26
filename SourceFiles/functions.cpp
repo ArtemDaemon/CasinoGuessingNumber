@@ -17,9 +17,9 @@ int getSecretNumber(const int min, const int max) {
  * Function for getting an unsigned integer from use input
  * @return unsigned integer
  */
-unsigned int getUnsignedInt() {
+unsigned getUnsignedInt() {
     std::string userInput;
-    unsigned int resultNumber;
+    unsigned resultNumber;
 
     std::cin >> userInput;
 
@@ -37,7 +37,7 @@ unsigned int getUnsignedInt() {
  * @param resultNumber reference of output unsigned integer value
  * @return is user input an unsigned integer value
  */
-bool isUnsignedInt(const std::string input, unsigned int& resultNumber) {
+bool isUnsignedInt(const std::string input, unsigned& resultNumber) {
     int tempInt;
     if(isInt(input, tempInt) && tempInt >= 0) {
         resultNumber = tempInt;
